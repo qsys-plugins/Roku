@@ -1,0 +1,3 @@
+[submodule "PluginCompile"]
+	path = PluginCompile
+	url = https://github.com/amandaabate/PluginCompile.git
