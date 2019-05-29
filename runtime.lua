@@ -340,3 +340,7 @@ HeartBeat.EventHandler = function ()
     PollApps()
   end
 end
+
+-- Called on START
+Init()
+IsEmulated()

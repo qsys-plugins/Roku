@@ -8,13 +8,12 @@
 PluginInfo =
 {
   Name = "Roku Control",
-  Version = "0.0.0.13",
-  Id = "COMPILEDPLUGIN-RokuControl-0.0.0.13",
+  Version = "0.0.0.8",
+  Id = "COMPILEDPLUGIN-RokuControl",
   Description = "Roku Control From QSD",
   ShowDebug = true,
   InstallPath = ""
 }
-
 
 --Define Global Variables Here
 
@@ -25,9 +24,11 @@ end
 
 function GetPages()
   pages = {}
+
   table.insert( pages, { name = "Remote"})
-  table.insert( pages, { name = "Channels"})
-  table.insert( pages, { name = "Settings"})
+table.insert( pages, { name = "Channels"})
+table.insert( pages, { name = "Settings"})
+
   return pages
 end
 
@@ -35,8 +36,11 @@ function GetColor(props)
   return { 204, 204, 204 }
 end
 
-function GetProperties() -- No properties needed
+function GetProperties()
   props = {}
+
+   -- No properties needed
+
   return props
  end
 
@@ -592,7 +596,6 @@ function GetControls(props)
 
   return ctrls
 end
-
 
 function GetControlLayout(props)
   layout   = {}

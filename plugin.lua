@@ -4,6 +4,7 @@
 -- Version 0.0.0.8 Notes: Put App buttons into for loop
 -- Notes:
 
+--Define plugin info here
 --[[ #include "info.lua" ]]
 
 --Define Global Variables Here
@@ -15,9 +16,9 @@ end
 
 function GetPages()
   pages = {}
-  table.insert( pages, { name = "Remote"})
-  table.insert( pages, { name = "Channels"})
-  table.insert( pages, { name = "Settings"})
+
+  --[[ #include "pages.lua" ]]
+
   return pages
 end
 
@@ -25,8 +26,11 @@ function GetColor(props)
   return { 204, 204, 204 }
 end
 
-function GetProperties() -- No properties needed
+function GetProperties()
   props = {}
+
+  --[[ #include "properties.lua" ]]
+
   return props
  end
 
@@ -37,7 +41,6 @@ function GetControls(props)
 
   return ctrls
 end
-
 
 function GetControlLayout(props)
   layout   = {}
@@ -57,10 +60,6 @@ end
 if Controls then
 
 --[[ #include "runtime.lua" ]]
-
--- Called on START
-Init()
-IsEmulated()
 
 end
 -----------------------------------------------------------------------------------------------------------------------------------------------------
