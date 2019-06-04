@@ -1,3 +1,3 @@
-[submodule "plugincompile"]
-	path = plugincompile
-	url = ssh://git@bb-usbr.qsc.com:7999/qp/plugincompile.git
+[submodule "PluginCompile"]
+	path = PluginCompile
+	url = git@github.com:qsys-plugins/PluginCompile.git
